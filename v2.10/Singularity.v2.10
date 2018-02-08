@@ -69,7 +69,7 @@ export MLST_VERSION
   echo "Done"
 
 %runscript
-  echo "Welcome to MDU MLST ${MLST_VERSION}" >&2
+  echo "Welcome to MLST ${MLST_VERSION}" >&2
   exec mlst "$@"
 
 %test
