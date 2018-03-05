@@ -23,10 +23,7 @@ export MLST_VERSION
   sudo update-locale
   
   sudo apt-get --yes update
-  sudo apt-get --yes install make wget
-
-  echo "Installing PERL dependencies"
-  sudo cpan install Moo List::MoreUtils JSON File::Slurp
+  sudo apt-get --yes install make wget libmoo-perl liblist-moreutils-perl libfile-slurp-perl
 
   echo "Installing BLAST"
 
