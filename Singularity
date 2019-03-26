@@ -39,7 +39,7 @@ mlst_db_update.log mlst_db_update.log
   conda config --add channels r
   conda config --add channels bioconda
   conda config --add channels anaconda
-  conda install -c bioconda mlst==2.61.1-0
+  conda install -c bioconda mlst==2.16.1-0
 
   echo "Sorting some env variables..."
   chmod 555 /etc/dbupdate
