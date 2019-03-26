@@ -2,15 +2,15 @@ Bootstrap: docker
 From: continuumio/miniconda3:4.5.11
 
 %help
-A Singularity image for MLST 2.61.1
+A Singularity image for MLST 2.16.1
 
 %labels
 Maintainer Anders Goncalves da Silva
 Build 1.0
-MLST_version 2.61.1
+MLST_version 2.16.1
 
 %environment
-MLST_VERSION=2.61.1
+MLST_VERSION=2.16.1
 export MLST_VERSION
 export PATH=/opt/conda/bin:$PATH
 export PYTHONUSERBASE=False
@@ -55,7 +55,7 @@ mlst_db_update.log mlst_db_update.log
   
 
 %test
-  
+  export PATH=/opt/conda/bin:$PATH
   export MLST_DB=/opt/mlst/db/blast/mlst.fa
   export MLST_PUBMLST=/opt/mlst/db/pubmlst
   
